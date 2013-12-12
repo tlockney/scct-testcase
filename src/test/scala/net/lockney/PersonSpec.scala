@@ -10,7 +10,7 @@ class PersonSpec extends FlatSpec with Matchers {
     p.getName should not be ("Some guy")
   }
 
-  "A Person" should "have return its name with toString" in {
+  "A Person" should "return name when calling toString" in {
     val p = new Person("Thomas")
     p.toString should be ("Thomas")
   }
